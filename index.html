@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Room Assistant</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f0f0f0; }
+        h1 { color: #333; }
+        #video-feed { border: 5px solid #333; margin: 20px auto; width: 640px; }
+        #detections { margin-top: 20px; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Smart Room Assistant 🚀</h1>
+    <img id="video-feed" src="{{ url_for('video_feed') }}">
+    <div id="detections">Detected objects will appear here...</div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
